@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="/src/scripts/main.js" defer></script>
+  <title>Sitemap</title>
+</head>
+<body>
+  <section class="section sitemap">
+    <div class="container">
+      <div class="sitemap__wrapper">
+        <h1 class="sitemap__title">
+          Sitemap
+        </h1>
+
+        <h2 class="sitemap__subtitle">
+          Пример работы модальных окон
+        </h2>
+
+        <button data-open-modal="test-modal">
+          Открыть модальное окно
+        </button>
+  
+        <div class="modal modal--preload" data-modal="test-modal">
+          <div class="modal__wrapper">
+            <div class="modal__overlay" data-close-modal>
+            </div>
+  
+            <div class="modal__content">
+              <h2>
+                Хай! Хеллоу! Хаюшки!
+              </h2>
+
+              <p>
+                Я тестовое модальное окно!
+              </p>
+  
+              <button data-close-modal="test-modal">
+                Закрой меня
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <h2>
+          Список всех страниц проекта
+        </h2>
+
+        <ul>
+          <li>
+            <a href="/index.html">
+              Главная
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="/src/pages/filename.html">
+              Название страницы
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

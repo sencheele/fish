@@ -1,0 +1,26 @@
+@use "../variables" as *;
+@use "../media" as *;
+@use "../mixins" as *;
+
+.container {
+  --content-width: 1680px;
+  --padding-inline: 40px;
+
+  max-width: calc(var(--content-width) + var(--padding-inline) * 2);
+  height: 100%;
+  margin: 0 auto;
+  padding-inline: var(--padding-inline);
+
+  @include vp-1760 {
+    --content-width: 1240px;
+  }
+
+  @include vp-1320 {
+    --content-width: 728px;
+  }
+
+  @include vp-808 {
+    --content-width: 430px;
+    --padding-inline: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.section {
+  --padding-block: 50px;
+
+  padding-block: var(--padding-block);
+
+  @include vp-1760 {
+    --padding-block: 40px;
+  }
+
+  @include vp-1320 {
+    --padding-block: 30px;
+  }
+
+  @include vp-808 {
+    --padding-block: 20px;
+  }
+}
