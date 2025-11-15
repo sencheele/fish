@@ -1,13 +1,16 @@
 // colors
-$color-background-main: #f5f5f5;
-$color-text-main: #585858;
-$color-accent: #ffb300;
+$color-background-main: #173454;
+$color-text-main: #F3F6FA;
+$color-accent: #FFCA10;
+
+$color-white: #CAD9E7;
+$color-white-dark: #F3F6FA;
+$color-blue: #173454;
 
 // fonts
-$ff-comic-relief: "ComicRelief", sans-serif;
-$ff-dm-serif-text: "DMSerifText", sans-serif;
+$ff-roboto: "Roboto", sans-serif;
 
-$ff-main: $ff-dm-serif-text;
+$ff-main: $ff-roboto;
 
 // transitions
 $trans-default: 0.3s ease;

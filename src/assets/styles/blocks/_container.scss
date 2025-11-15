@@ -3,7 +3,7 @@
 @use "../mixins" as *;
 
 .container {
-  --content-width: 1680px;
+  --content-width: 1440px;
   --padding-inline: 40px;
 
   max-width: calc(var(--content-width) + var(--padding-inline) * 2);
@@ -11,16 +11,20 @@
   margin: 0 auto;
   padding-inline: var(--padding-inline);
 
-  @include vp-1760 {
-    --content-width: 1240px;
+  @include vp-1519 {
+    --content-width: 1160px;
   }
 
-  @include vp-1320 {
-    --content-width: 728px;
+  @include vp-1239 {
+    --content-width: 768px;
   }
 
-  @include vp-808 {
-    --content-width: 430px;
+  @include vp-847 {
+    --content-width: 576px;
     --padding-inline: 20px;
+  }
+
+  @include vp-615 {
+    --content-width: 335px;
   }
 }

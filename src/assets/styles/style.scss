@@ -6,5 +6,7 @@
 @use 'utils';
 @use 'globals';
 
+@use './blocks/button';
 @use './blocks/section';
 @use './blocks/container';
+@use './blocks/header';

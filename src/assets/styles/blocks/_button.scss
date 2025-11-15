@@ -1,0 +1,11 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.button {
+  @include reset-button;
+  @include flex-center;
+
+  user-select: none;
+  cursor: pointer;
+}

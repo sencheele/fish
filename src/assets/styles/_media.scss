@@ -1,58 +1,38 @@
 // desktop first
 
 // main
-@mixin vp-1760 {
-  @media (max-width: 1760px) {
+@mixin vp-1919 {
+  @media (max-width: 1919px) {
     @content;
   }
 }
 
-@mixin vp-1320 {
-  @media (max-width: 1320px) {
+@mixin vp-1519 {
+  @media (max-width: 1519px) {
     @content;
   }
 }
 
-@mixin vp-808 {
-  @media (max-width: 808px) {
+@mixin vp-1239 {
+  @media (max-width: 1239px) {
     @content;
   }
 }
 
-@mixin vp-430 {
-  @media (max-width: 430px) {
+@mixin vp-847 {
+  @media (max-width: 847px) {
     @content;
   }
 }
 
-// dop
-@mixin vp-425 {
-  @media (max-width: 425px) {
+@mixin vp-615 {
+  @media (max-width: 615px) {
     @content;
   }
 }
 
-// mobile first
-// @mixin vp-1920 {
-//   @media (min-width: 1920px) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-1280 {
-//   @media (min-width: 1280px) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-768 {
-//   @media (min-width: 768px) {
-//     @content;
-//   }
-// }
-
-// @mixin vp-375 {
-//   @media (min-width: 375px) {
-//     @content;
-//   }
-// }
+@mixin vp-389 {
+  @media (max-width: 389px) {
+    @content;
+  }
+}
