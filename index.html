@@ -5,14 +5,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/scripts/main.js" defer></script>
-    <title>Шаблон</title>
+    <title>Рыба</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
+                <a class="header__logo" href="/">
+                    <svg>
+                        <use href="/public/sprite.svg#logo"></use>
+                    </svg>
+                </a>
 
+                <nav class="header__nav">
+                    <a class="header__nav-link" href="/">
+                        Главная
+                    </a>
+
+                    <a class="header__nav-link" href="/">
+                        Каталог
+                    </a>
+
+                    <a class="header__nav-link" href="/">
+                        Контакты
+                    </a>
+                </nav>
+
+                <div class="header__search">
+                    <form class="header__search-form">
+                        <button class="button header__search-button" type="button">
+                            <svg>
+                                <use href="/public/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+
+                        <input class="header__search-input" type="text" name="search" placeholder="Найди рыбку по себе">
+                    </form>
+                </div>
+
+                <div class="header__actions">
+                    <button class="button header__action-button" type="button">
+                        <svg>
+                            <use href="/public/sprite.svg#icon-heart"></use>
+                        </svg>
+
+                        <span class="header__action-badge">
+                            16
+                        </span>
+                    </button>
+
+                    <button class="button header__action-button" type="button">
+                        <svg>
+                            <use href="/public/sprite.svg#icon-basket"></use>
+                        </svg>
+
+                        <span class="header__action-badge">
+                            16
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -24,9 +76,9 @@
                     <h1>
                         Шаблон template
                     </h1>
-                    <svg>
+                    <!-- <svg>
                         <use href="/public/sprite.svg#tel"></use>
-                    </svg>
+                    </svg> -->
                 </div>
             </div>
         </section>
