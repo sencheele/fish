@@ -1,0 +1,245 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.intro {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__bg-image {
+    position: absolute;
+    top: calc(-120px - 90px);
+    left: 50%;
+    width: 1920px;
+    height: auto;
+    pointer-events: none;
+    transform: translateX(-50%);
+
+    @include vp-1534 {
+      top: calc(-120px - 75px);
+      width: 1534px;
+    }
+
+    @include vp-1239 {
+      top: calc(-120px - 60px);
+      width: 1239px;
+    }
+
+    @include vp-847 {
+      top: calc(-80px - 45px);
+    }
+
+    @include vp-615 {
+      top: calc(-120px - 30px);
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__text {
+    position: relative;
+    max-width: 690px;
+
+    @include vp-1534 {
+      max-width: 560px;
+    }
+
+    @include vp-1239 {
+      max-width: 455px;
+    }
+
+    @include vp-847 {
+      max-width: 350px;
+    }
+
+    @include vp-615 {
+      max-width: 230px
+    }
+  }
+
+  &__title {
+    @include typography(700, 0.9, 196px);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    background: linear-gradient(224deg, #ffca10 0%, #fff 100%);
+    background-clip: text;
+    text-transform: uppercase;
+
+    @include vp-1534 {
+      font-size: 160px;
+    }
+
+    @include vp-1239 {
+      line-height: 0.8;
+      font-size: 130px;
+    }
+
+    @include vp-847 {
+      font-size: 100px;
+    }
+
+    @include vp-615 {
+      font-size: 64px;
+    }
+
+    &--small {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(137deg, rgba(255, 255, 255, 0.91) 0%, #67b1f2 100%);
+      background-clip: text;
+      font-size: 150px;
+
+      @include vp-1534 {
+        font-size: 122px;
+      }
+
+      @include vp-1239 {
+        font-size: 85px;
+      }
+
+      @include vp-847 {
+        font-size: 64px;
+      }
+
+      @include vp-615 {
+        font-size: 46px;
+      }
+    }
+  }
+
+  &__description {
+    @include typography(400, 1.4, 20px);
+
+    position: relative;
+    z-index: 1;
+    max-width: 330px;
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+
+    @include vp-615 {
+      font-size: 16px;
+    }
+  }
+
+  .intro__button-wrapper {
+    margin-top: -30px;
+    margin-left: 400px;
+
+    @include vp-1534 {
+    }
+
+    @include vp-1239 {
+      margin-top: 30px;
+      margin-left: 250px;
+    }
+
+    @include vp-847 {
+      margin-left: 150px;
+    }
+
+    @include vp-615 {
+      margin-top: 40px;
+      margin-left: 15px;
+    }
+  }
+
+  &__button {
+    @include typography(700, 1.2, 26px);
+
+    position: relative;
+    width: 220px;
+    height: 220px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: $color-accent;
+    text-align: center;
+    transition: background-color $trans-default;
+
+    @include vp-847 {
+      width: 180px;
+      height: 180px;
+
+      font-size: 22px;
+    }
+
+    @include vp-615 {
+      width: 140px;
+      height: 140px;
+    }
+
+    svg {
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      fill: transparent;
+      stroke: $color-accent;
+      transition: stroke $trans-default;
+
+      @include vp-847 {
+        width: 220px;
+        height: 220px;
+      }
+
+      @include vp-615 {
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+    @include hover {
+      background-color: $color-accent-dark;
+
+      svg {
+        stroke: $color-accent-dark;
+      }
+    }
+  }
+
+  .intro__image {
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    width: 1120px;
+    height: 1120px;
+    pointer-events: none;
+    transform: translateY(-50%);
+
+    @include vp-1534 {
+      left: 400px;
+      width: 1000px;
+      height: 1000px;
+    }
+
+    @include vp-1239 {
+      left: 280px;
+      width: 800px;
+      height: 800px;
+    }
+
+    @include vp-847 {
+      left: 220px;
+      width: 600px;
+      height: 600px;
+    }
+
+    @include vp-615 {
+      left: 130px;
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .intro__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

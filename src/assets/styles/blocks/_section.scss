@@ -3,9 +3,25 @@
 @use '../media' as *;
 
 .section {
-  --padding-block: 50px;
+  --padding-block: 90px;
 
   padding-block: var(--padding-block);
+
+  @include vp-1534 {
+    --padding-block: 75px;
+  }
+
+  @include vp-1239 {
+    --padding-block: 60px;
+  }
+
+  @include vp-847 {
+    --padding-block: 45px;
+  }
+
+  @include vp-615 {
+    --padding-block: 30px;
+  }
 
   // @include vp-1760 {
   //   --padding-block: 40px;
