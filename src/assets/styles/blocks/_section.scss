@@ -23,15 +23,22 @@
     --padding-block: 30px;
   }
 
-  // @include vp-1760 {
-  //   --padding-block: 40px;
-  // }
+  &__title {
+    @include typography(700, 1, 60px);
 
-  // @include vp-1320 {
-  //   --padding-block: 30px;
-  // }
+    margin-bottom: 30px;
 
-  // @include vp-808 {
-  //   --padding-block: 20px;
-  // }
+    @include vp-1239 {
+      font-size: 48px;
+    }
+
+    @include vp-847 {
+      font-size: 36px;
+    }
+
+    @include vp-615 {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+  }
 }

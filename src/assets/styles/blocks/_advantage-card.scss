@@ -1,0 +1,64 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+  border-radius: 20px;
+  background-color: $color-blue-light;
+
+  &__image{
+    width: 110px;
+    height: 110px;
+    margin-bottom: 20px;
+
+    @include vp-1239 {
+      width: 90px;
+      height: 90px;
+    }
+
+    @include vp-615 {
+      width: 75px;
+      height: 75px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: none;
+    }
+  }
+
+  &__title {
+    @include typography(700, 1, 20px);
+
+    margin-bottom: 10px;
+    text-align: center;
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+
+    @include vp-615 {
+      font-size: 16px;
+    }
+  }
+
+  &__description {
+    @include typography(400, 1.2, 20px, $color-white-blue);
+
+    text-align: center;
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+
+    @include vp-615 {
+      font-size: 16px;
+    }
+  }
+}

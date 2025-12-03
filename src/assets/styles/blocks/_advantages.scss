@@ -1,0 +1,28 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.advantages {
+  &__title {
+    text-align: end;
+
+    @include vp-615 {
+      text-align: start;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include vp-1239 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-615 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
