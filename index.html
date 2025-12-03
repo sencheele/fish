@@ -9,88 +9,117 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a class="header__logo" href="/">
-                    <svg>
-                        <use href="/public/sprite.svg#logo"></use>
-                    </svg>
-                </a>
-
-                <nav class="header__nav">
-                    <a class="header__nav-link" href="/">
-                        Главная
+    <div class="global-container">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a class="header__logo" href="/">
+                        <svg>
+                            <use href="/public/sprite.svg#logo"></use>
+                        </svg>
                     </a>
 
-                    <a class="header__nav-link" href="/">
-                        Каталог
-                    </a>
+                    <nav class="header__nav">
+                        <a class="header__nav-link" href="/">
+                            Главная
+                        </a>
 
-                    <a class="header__nav-link" href="/">
-                        Контакты
-                    </a>
-                </nav>
+                        <a class="header__nav-link" href="/">
+                            Каталог
+                        </a>
 
-                <div class="header__search">
-                    <form class="header__search-form">
-                        <button class="button header__search-button" type="button">
+                        <a class="header__nav-link" href="/">
+                            Контакты
+                        </a>
+                    </nav>
+
+                    <div class="header__search">
+                        <form class="header__search-form">
+                            <button class="button header__search-button" type="button">
+                                <svg>
+                                    <use href="/public/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+
+                            <input class="header__search-input" type="text" name="search" placeholder="Найди рыбку по себе">
+                        </form>
+                    </div>
+
+                    <div class="header__actions">
+                        <button class="button header__action-button" type="button">
                             <svg>
-                                <use href="/public/sprite.svg#icon-search"></use>
+                                <use href="/public/sprite.svg#icon-heart"></use>
                             </svg>
+
+                            <span class="header__action-badge">
+                                16
+                            </span>
                         </button>
 
-                        <input class="header__search-input" type="text" name="search" placeholder="Найди рыбку по себе">
-                    </form>
-                </div>
+                        <button class="button header__action-button" type="button">
+                            <svg>
+                                <use href="/public/sprite.svg#icon-basket"></use>
+                            </svg>
 
-                <div class="header__actions">
-                    <button class="button header__action-button" type="button">
-                        <svg>
-                            <use href="/public/sprite.svg#icon-heart"></use>
-                        </svg>
-
-                        <span class="header__action-badge">
-                            16
-                        </span>
-                    </button>
-
-                    <button class="button header__action-button" type="button">
-                        <svg>
-                            <use href="/public/sprite.svg#icon-basket"></use>
-                        </svg>
-
-                        <span class="header__action-badge">
-                            16
-                        </span>
-                    </button>
+                            <span class="header__action-badge">
+                                16
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main">
-        <section class="section intro">
+        <main class="main">
+            <section class="section intro">
+                <div class="container">
+                    <div class="intro__wrapper">
+                        <div class="intro__bg-image">
+                            <img src="/src/assets/images/intro/bg.png">
+                        </div>
+
+                        <div class="intro__content">
+                            <div class="intro__text">
+                                <h1 class="intro__title">
+                                    <span class="intro__title">Самая</span>
+                                    <span class="intro__title--small">вкусная</span>
+                                    <span class="intro__title--small">рыба</span>
+                                </h1>
+
+                                <div class="intro__description">
+                                    <p>
+                                        Мы&nbsp;сотрудничаем с&nbsp;лучшими поставщиками рыбной продукции среди стран СНГ.
+                                    </p>
+                                </div>
+
+                                <div class="intro__image">
+                                    <img src="/src/assets/images/intro/fish-board.png" alt="Доска с рыбой">
+                                </div>
+                            </div>
+
+                            <div class="intro__button-wrapper">
+                                <a class="button intro__button" href="/">
+                                    Перейти в&nbsp;каталог
+
+                                    <svg>
+                                        <use href="/public/sprite.svg#button-outline"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
             <div class="container">
-                <div class="intro__wrapper">
-                    <h1>
-                        Шаблон template
-                    </h1>
-                    <!-- <svg>
-                        <use href="/public/sprite.svg#tel"></use>
-                    </svg> -->
+                <div class="footer__wrapper">
+
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
