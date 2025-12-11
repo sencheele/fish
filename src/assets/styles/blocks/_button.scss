@@ -8,4 +8,86 @@
 
   user-select: none;
   cursor: pointer;
+
+  // Круглая кнопка
+  &--round {
+    @include typography(700, 1.2, 26px);
+
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color $trans-default;
+
+    @include vp-847 {
+      width: 180px;
+      height: 180px;
+      margin: 20px;
+
+      font-size: 22px;
+    }
+
+    @include vp-615 {
+      width: 140px;
+      height: 140px;
+      margin: 15px;
+    }
+
+    svg {
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      fill: transparent;
+      stroke: $color-accent;
+      transition: stroke $trans-default;
+
+      @include vp-847 {
+        width: 220px;
+        height: 220px;
+      }
+
+      @include vp-615 {
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+    // Модификаторы цвета для круглой кнопки
+    &.button--yellow {
+      background-color: $color-accent;
+      color: $color-white-dark;
+
+      svg {
+        stroke: $color-accent;
+      }
+
+      @include hover {
+        background-color: $color-accent-dark;
+
+        svg {
+          stroke: $color-accent-dark;
+        }
+      }
+    }
+
+    &.button--white {
+      background-color: $color-white-dark;
+      color: $color-blue;
+
+      svg {
+        stroke: $color-white-dark;
+      }
+
+      @include hover {
+        background-color: $color-white-blue;
+
+        svg {
+          stroke: $color-white-blue;
+        }
+      }
+    }
+  }
 }

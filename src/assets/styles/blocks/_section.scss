@@ -28,6 +28,10 @@
 
     margin-bottom: 30px;
 
+    @include vp-1534 {
+      font-size: 56px;
+    }
+
     @include vp-1239 {
       font-size: 48px;
     }
