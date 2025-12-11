@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'media' as *;
 
 body {
   // @include fluid-text(18, 16);
@@ -32,6 +33,46 @@ a {
   color: inherit;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 .global-container {
+  position: relative;
   overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(50% - 960px);
+    display: block;
+    width: 50px;
+    height: 100%;
+    // border: 1px solid coral;
+    background: linear-gradient(90deg, $color-background-main, transparent);
+
+    @include vp-1919 {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(50% + 960px);
+    display: block;
+    width: 50px;
+    height: 100%;
+    // border: 1px solid coral;
+    background: linear-gradient(90deg, transparent, $color-background-main);
+    transform: translateX(-100%);
+
+    @include vp-1919 {
+      display: none;
+    }
+  }
 }
