@@ -1,0 +1,59 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
+
+.empty-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba($color: $color-white-blue-dark, $alpha: 0.5);
+
+  @include vp-1239 {
+    min-height: 350px;
+  }
+
+  @include vp-615 {
+    min-height: 365px;
+  }
+
+  &__icon {
+    width: 180px;
+    aspect-ratio: 1;
+
+    @include vp-1239 {
+      width: 140px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: $color-accent;
+    }
+  }
+
+  &__title {
+    @include typography(700, 1, 20px);
+
+    text-align: center;
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+  }
+
+  &__description {
+    @include typography(400, 1.1, 18px, $color-white-blue);
+
+    text-align: center;
+
+    @include vp-1239 {
+      font-size: 16px;
+    }
+  }
+}
