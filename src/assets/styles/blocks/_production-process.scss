@@ -1,0 +1,224 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
+
+.production-process {
+  &__wrapper {
+    position: relative;
+    width: calc((100% - 20px) / 2);
+    margin-left: auto;
+
+    @include vp-1239 {
+      width: calc((100% - 20px) / 3 * 2);
+    }
+
+    @include vp-847 {
+      width: 100%;
+    }
+  }
+
+  &__bg-image {
+    position: absolute;
+    z-index: -1;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &--bubbles-1 {
+      top: -200px;
+      right: -150px;
+      aspect-ratio: 219 / 158;
+      width: 219px;
+
+      @include vp-847 {
+        top: 0;
+        right: -100px;
+        width: 150px;
+      }
+
+      @include vp-615 {
+        top: 300px;
+        right: -100px;
+        width: 100px;
+      }
+    }
+
+    &--bubbles-2 {
+      top: 100px;
+      left: calc(-100% - 150px);
+      aspect-ratio: 120 / 105;
+      width: 120px;
+
+      @include vp-847 {
+        top: 450px;
+        left: -50px;
+        width: 80px;
+      }
+
+      @include vp-615 {
+        top: 250px;
+        left: -50px;
+        width: 50px;
+      }
+    }
+
+    &--bubbles-3 {
+      bottom: -50px;
+      right: 0px;
+      aspect-ratio: 1;
+      width: 160px;
+
+      @include vp-847 {
+        bottom: 50px;
+        right: 100px;
+        width: 100px;
+      }
+
+      @include vp-615 {
+        bottom: 50px;
+        right: 0px;
+        width: 80px;
+      }
+    }
+
+    &--algae {
+      top: -350px;
+      right: -240px;
+      aspect-ratio: 570 / 1171;
+      width: 570px;
+      opacity: 0.3;
+
+      @include vp-847 {
+        top: 300px;
+        right: -150px;
+        width: 500px;
+      }
+
+      @include vp-615 {
+        top: 100px;
+        right: -150px;
+        width: 400px;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    right: calc(100% - 100px);
+    aspect-ratio: 710 / 784;
+    width: 1000px;
+    height: auto;
+    transform: translateY(-50%);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include vp-1534 {
+      right: calc(100% - 130px);
+      width: 900px;
+    }
+
+    @include vp-1239 {
+      right: calc(100% - 180px);
+      width: 1100px;
+    }
+
+    @include vp-847 {
+      position: static;
+      aspect-ratio: 1;
+      width: 100%;
+      margin-bottom: 20px;
+      transform: translate(0);
+
+      img {
+        transform: translateX(50px) scale(1.3);
+      }
+    }
+
+    @include vp-615 {
+      img {
+        transform: translateX(20px) scale(1.6);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    @include typography(300, 1.2, 20px, #CAD9E7);
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    max-width: 80%;
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+
+    @include vp-615 {
+      max-width: none;
+      font-size: 16px;
+    }
+  }
+
+  &__count {
+    @include typography(700, 1, 100px);
+
+    position: relative;
+    flex-shrink: 0;
+    width: 90px;
+    padding-top: 10px;
+
+    svg {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      display: block;
+      width: 90px;
+      height: 90px;
+      fill: $color-blue-alt;
+    }
+
+    &--accent svg {
+      fill: $color-accent;
+    }
+
+    @include vp-1239 {
+      width: 80px;
+      padding-top: 5px;
+      font-size: 86px;
+
+      svg {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    @include vp-615 {
+      width: 60px;
+      padding-top: 10px;
+      font-size: 64px;
+
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
