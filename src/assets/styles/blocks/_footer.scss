@@ -1,0 +1,233 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.footer {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 20px;
+
+    @include vp-847 {
+      flex-direction: column;
+      justify-content: start;
+      align-items: stretch;
+      row-gap: 40px;
+    }
+  }
+
+  &__bg-image {
+    position: absolute;
+    z-index: -1;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &--wave-big {
+      top: -180px;
+      left: -240px;
+      aspect-ratio: 1920 / 420;
+      width: 1920px;
+
+      @include vp-847 {
+        top: -120px;
+      }
+    }
+
+    &--wave-small {
+      bottom: -90px;
+      left: -240px;
+      aspect-ratio: 593 / 271;
+      width: 593px;
+    }
+  }
+
+  &__about {
+    margin-top: -20px;
+  }
+
+  &__logo {
+    display: block;
+    aspect-ratio: 156 / 60;
+    width: 156px;
+    margin-bottom: 20px;
+    outline: none;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__tel {
+    @include typography(400, 1, 20px);
+
+    display: block;
+    padding-block: 5px;
+    transition: color $trans-default;
+
+    @include hover {
+      color: $color-accent;
+    }
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+
+    @include vp-615 {
+      font-size: 16px;
+    }
+  }
+
+  &__group {
+    display: contents;
+
+    @include vp-1239 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px
+    }
+  }
+
+  &__social {
+    &-title {
+      @include typography(700, 1, 20px);
+
+      margin-bottom: 20px;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &-link {
+      display: block;
+      width: 44px;
+      height: 44px;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: fill $trans-default, stroke $trans-default;
+      }
+
+      &--twitter {
+        svg {
+          fill: none;
+          stroke: $color-white-blue;
+        }
+
+        @include hover {
+          svg {
+            stroke: $color-accent;
+          }
+        }
+      }
+
+      &--telegram {
+        svg {
+          fill: $color-white-blue;
+        }
+
+        @include hover {
+          svg {
+            fill: $color-accent;
+          }
+        }
+      }
+
+      &--vk {
+        svg {
+          fill: $color-white-blue;
+        }
+
+        @include hover {
+          svg {
+            fill: $color-accent;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    column-gap: 80px;
+    margin-bottom: 20px;
+
+    @include vp-615 {
+      justify-content: space-between;
+      column-gap: 10px;
+    }
+
+    &-link {
+      @include typography(400, 1, 20px);
+
+      transition: color $trans-default;
+
+      @include hover {
+        color: $color-accent;
+      }
+
+      @include vp-1239 {
+        font-size: 18px;
+      }
+
+      @include vp-615 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__documents {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 10px;
+
+    @include vp-615 {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &-link {
+      @include typography(300, 1, 20px, $color-white-blue);
+
+      text-decoration: underline;
+      text-decoration-thickness: 0.5px;
+      transition: color $trans-default;
+
+      @include hover {
+        color: $color-white-blue-dark;
+      }
+
+      @include vp-1239 {
+        font-size: 18px;
+      }
+
+      @include vp-615 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__copyright {
+    @include typography(300, 1, 20px, $color-white-blue);
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
+
+    @include vp-615 {
+      font-size: 16px;
+    }
+  }
+}

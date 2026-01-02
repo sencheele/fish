@@ -33,6 +33,10 @@
       top: -70px;
       aspect-ratio: 500 / 185;
       width: 1920px;
+
+      @include vp-847 {
+        top: -100px;
+      }
     }
 
     &--wave-clouds {
@@ -40,6 +44,10 @@
       aspect-ratio: 500 / 275;
       width: 1920px;
       opacity: 0.5;
+
+      @include vp-847 {
+        top: -100px;
+      }
     }
 
     img {
@@ -69,15 +77,6 @@
     }
 
     @include vp-847 {
-      top: auto;
-      left: auto;
-      right: -250px;
-      bottom: -350px;
-      width: 650px;
-      transform: translateY(0);
-    }
-
-    @include vp-615 {
       display: none;
     }
   }
@@ -88,7 +87,7 @@
     margin-bottom: 40px;
 
     @include vp-1239 {
-      font-style: 18px;
+      font-size: 18px;
     }
 
     @include vp-847 {
@@ -96,7 +95,7 @@
     }
 
     @include vp-615 {
-      font-style: 16px;
+      font-size: 16px;
     }
   }
 }
