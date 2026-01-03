@@ -6,9 +6,12 @@
 @use 'utils';
 @use 'globals';
 
-@use './blocks/button';
+// globals
 @use './blocks/section';
 @use './blocks/container';
+@use './blocks/button';
+
+// blocks
 @use './blocks/header';
 @use './blocks/intro';
 @use './blocks/advantages';
@@ -21,3 +24,8 @@
 @use './blocks/form';
 @use './blocks/feedback';
 @use './blocks/footer';
+
+// modals
+@use './blocks/cart-card';
+@use './blocks/cart';
+@use './blocks/order-form';

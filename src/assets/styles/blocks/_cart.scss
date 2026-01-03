@@ -1,0 +1,233 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.cart {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+
+    @include vp-1534 {
+      grid-template-columns: 1fr 340px;
+    }
+
+    @include vp-1239 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 40px 40px;
+    border-radius: 20px 0 0 20px;
+    background-color: $color-white-dark;
+
+    @include vp-1534 {
+      padding: 30px 20px 30px 30px;
+    }
+
+    @include vp-1239 {
+      border-radius: 20px 20px 0 0;
+    }
+
+    @include vp-615 {
+      padding: 20px 15px;
+    }
+  }
+
+  &__title {
+    @include typography(700, 1, 30px, $color-text-dark);
+
+    margin-bottom: 25px;
+
+    &--light {
+      color: $color-text-main;
+    }
+
+    @include vp-1534 {
+      margin-bottom: 20px;
+    }
+
+    @include vp-1239 {
+      font-size: 26px;
+    }
+
+    @include vp-615 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: auto;
+    max-height: 560px;
+    padding-right: 10px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: rgba($color: $color-white-blue, $alpha: 0.5);
+    }
+
+    @include vp-1534 {
+      max-height: 385px;
+    }
+
+    @include vp-1239 {
+      row-gap: 10px;
+      max-height: 350px;
+    }
+
+    @include vp-847 {
+      row-gap: 20px;
+      max-height: none;
+      overflow-y: visible;
+    }
+
+    @include vp-615 {
+      row-gap: 30px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 30px;
+    padding-right: 25px;
+
+    @include vp-1239 {
+      margin-top: 20px;
+    }
+
+    @include vp-847 {
+      margin-top: 30px;
+    }
+
+    @include vp-615 {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  }
+
+  &__summary {
+    display: grid;
+    grid-template-columns: max-content 95px;
+    gap: 8px;
+    text-align: end;
+
+    @include vp-1239 {
+      grid-template-columns: max-content 85px;
+    }
+
+    @include vp-615 {
+      grid-template-columns: max-content 75px;
+    }
+
+    &-label {
+      @include typography(700, 1, 20px, $color-text-dark);
+
+      &--blue {
+        color: $color-blue-alt;
+      }
+
+      @include vp-1239 {
+        font-size: 18px;
+      }
+
+      @include vp-1239 {
+        font-size: 16px;
+      }
+    }
+
+    &-value {
+      @include typography(700, 1, 20px, $color-text-dark);
+
+      &--blue {
+        color: $color-blue-alt;
+      }
+
+      @include vp-1239 {
+        font-size: 18px;
+      }
+
+      @include vp-1239 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__back {
+    @include reset-button;
+    @include typography(400, 1, 20px, $color-gray);
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    transition: color $trans-default;
+
+    svg {
+      display: block;
+      aspect-ratio: 17 / 13;
+      width: 22px;
+      stroke: $color-gray;
+      transform: translateY(1px);
+      transition: stroke $trans-default;
+    }
+
+    @include hover {
+      color: $color-blue-light;
+
+      svg {
+        stroke: $color-blue-light;
+      }
+    }
+
+    @include vp-1239 {
+      font-size: 18px;
+
+      svg {
+        width: 20px;
+      }
+    }
+
+    @include vp-615 {
+      transform: translateX(-6px);
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &__sidebar {
+    padding: 40px;
+    border-radius: 0 20px 20px 0;
+    overflow-y: hidden;
+    background-color: $color-blue;
+
+    @include vp-1534 {
+      padding: 30px 15px 0 30px;
+    }
+
+    @include vp-1239 {
+      padding: 30px;
+      border-radius: 0 0 20px 20px;
+    }
+
+    @include vp-615 {
+      padding: 20px 15px;
+    }
+  }
+}

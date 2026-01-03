@@ -1,3 +1,5 @@
+@use '/src/assets/styles/media' as *;
+
 .modal {
   position: fixed;
   top: 0;
@@ -37,7 +39,11 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding-block: 40px;
+
+    @include vp-615 {
+      padding-block: 20px;
+    }
   }
 
   &__overlay {
@@ -52,12 +58,31 @@
   }
 
   &__content {
+    --content-width: 1440px;
+    --padding-inline: 40px;
+
     position: relative;
+    width: 100%;
 
-    width: 600px;
-    padding: 40px;
+    max-width: calc(var(--content-width) + var(--padding-inline) * 2);
+    padding-inline: var(--padding-inline);
 
-    background-color: #ffffff;
+    @include vp-1534 {
+      --content-width: 1160px;
+    }
+
+    @include vp-1239 {
+      --content-width: 768px;
+    }
+
+    @include vp-847 {
+      --content-width: 576px;
+      --padding-inline: 20px;
+    }
+
+    @include vp-615 {
+      --content-width: 335px;
+    }
   }
 
   &__close-btn {

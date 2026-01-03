@@ -1,0 +1,339 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+@use '../media' as *;
+
+.cart-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include vp-847 {
+    align-items: start;
+  }
+
+  @include vp-615 {
+    align-items: center;
+    padding-bottom: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-white-blue;
+    }
+  }
+
+  &__image {
+    aspect-ratio: 160 / 100;
+    height: 100px;
+    margin-right: 20px;
+
+    @include vp-1534 {
+      height: 85px;
+    }
+
+    @include vp-1239 {
+      height: 80px;
+    }
+
+    @include vp-615 {
+      height: 64px;
+      margin-right: 10px;
+    }
+
+    @include vp-375 {
+      height: 50px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+
+      @include vp-615 {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__content {
+    display: contents;
+
+    @include vp-847 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5px;
+      flex-grow: 1;
+      margin-right: 20px;
+    }
+
+    @include vp-615 {
+      display: contents;
+    }
+  }
+
+  &__name {
+    @include line-clamp(3);
+    @include typography(400, 1.2, 18px, $color-text-dark);
+
+    width: 250px;
+    margin-right: auto;
+
+    @include vp-1239 {
+      width: 180px;
+      font-size: 16px;
+    }
+
+    @include vp-847 {
+      grid-column: span 2;
+      width: auto;
+    }
+
+    @include vp-615 {
+      font-size: 14px;
+    }
+  }
+
+  &__group {
+    display: contents;
+
+    @include vp-615 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      width: 100%;
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+
+    @include vp-1534 {
+      margin-right: 30px;
+    }
+
+    @include vp-1239 {
+      margin-right: 20px;
+    }
+
+    @include vp-847 {
+      margin: 0;
+    }
+
+    @include vp-615 {
+      margin-bottom: -6px;
+      margin-left: -6px;
+    }
+
+    &-button {
+      @include reset-button;
+
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 14px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $color-blue;
+        transform: translate(-50%, -50%);
+        transition: background-color $trans-default;
+      }
+
+      &--plus {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: block;
+          width: 14px;
+          height: 2px;
+          border-radius: 2px;
+          background-color: $color-blue;
+          transform: translate(-50%, -50%) rotate(90deg);
+          transition: background-color $trans-default;
+        }
+      }
+
+      @include hover {
+        &::before {
+          background-color: $color-accent;
+        }
+
+        &::after {
+          background-color: $color-accent;
+        }
+      }
+
+      @include vp-615 {
+        width: 30px;
+        height: 30px;
+
+        &::before {
+          width: 12px;
+        }
+
+        &::after {
+          width: 12px;
+        }
+      }
+    }
+
+    &-value {
+      @include typography(400, 1, 18px, $color-blue);
+
+      width: 70px;
+      text-align: center;
+
+      @include vp-1239 {
+        width: 60px;
+        font-size: 16px;
+      }
+
+      @include vp-615 {
+        width: 55px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__cost {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100px;
+    margin-right: 80px;
+
+    @include vp-1534 {
+      width: 95px;
+      margin-right: 30px;
+    }
+
+    @include vp-1239 {
+      width: 90px;
+      margin-right: 40px;
+    }
+
+    @include vp-847 {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__price {
+    @include typography(700, 1, 20px, $color-blue);
+
+    @include vp-1534 {
+      font-size: 18px;
+    }
+
+    @include vp-1239 {
+      font-size: 16px;
+    }
+
+    @include vp-615 {
+      font-size: 14px;
+    }
+  }
+
+  &__old-price {
+    @include typography(300, 1, 16px, $color-gray);
+
+    text-decoration: line-through;
+
+    @include vp-1534 {
+      font-size: 15px;
+    }
+
+    @include vp-1239 {
+      font-size: 13px;
+    }
+
+    @include vp-615 {
+      font-size: 12px;
+    }
+  }
+
+  &__delete {
+    @include reset-button;
+
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $color-white-blue;
+      transform: translate(-50%, -50%) rotate(45deg);
+      transition: background-color $trans-default;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $color-white-blue;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      transition: background-color $trans-default;
+    }
+
+    @include hover {
+      &::before {
+        background-color: $color-blue-alt;
+      }
+
+      &::after {
+        background-color: $color-blue-alt;
+      }
+    }
+
+    @include vp-847 {
+      align-self: center;
+    }
+
+    @include vp-615 {
+      align-self: start;
+      width: 30px;
+      height: 30px;
+      transform: translate(5px, -5px);
+
+      &::before {
+        width: 16px;
+      }
+
+      &::after {
+        width: 16px;
+      }
+    }
+  }
+}

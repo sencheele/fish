@@ -22,7 +22,7 @@
     text-align: center;
     transition: background-color $trans-default;
 
-    @include vp-847 {
+    @include vp-1239 {
       width: 180px;
       height: 180px;
       margin: 20px;
@@ -44,7 +44,7 @@
       stroke: $color-accent;
       transition: stroke $trans-default;
 
-      @include vp-847 {
+      @include vp-1239 {
         width: 220px;
         height: 220px;
       }
