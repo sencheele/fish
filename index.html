@@ -64,7 +64,7 @@
                             </span>
                         </button>
 
-                        <button class="button header__action-button" type="button">
+                        <button class="button header__action-button" type="button" data-open-modal="cart">
                             <svg>
                                 <use href="/public/sprite.svg#icon-basket"></use>
                             </svg>
@@ -1865,6 +1865,351 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="modal modal--preload" data-modal="cart">
+        <div class="modal__wrapper">
+            <div class="modal__overlay" data-close-modal></div>
+
+            <div class="modal__content">
+                <div class="cart">
+                    <div class="cart__wrapper">
+                        <div class="cart__content">
+                            <h2 class="cart__title">
+                                Ваша корзина
+                            </h2>
+
+                            <ul class="cart__list">
+                                <li class="cart__item cart-card">
+                                    <div class="cart-card__image">
+                                        <img src="/src/assets/images/product-card/trout.jpg" alt="">
+                                    </div>
+
+                                    <div class="cart-card__content">
+                                        <p class="cart-card__name">
+                                            Форель слабосоленая с&nbsp;добавлением пряностей
+                                        </p>
+
+                                        <div class="cart-card__group">
+                                            <div class="cart-card__quantity">
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--minus"></button>
+
+                                                <p class="cart-card__quantity-value">
+                                                    100,5 кг
+                                                </p>
+
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--plus"></button>
+                                            </div>
+
+                                            <div class="cart-card__cost">
+                                                <p class="cart-card__old-price">
+                                                    200 500&nbsp;₽
+                                                </p>
+
+                                                <p class="cart-card__price">
+                                                    100 800&nbsp;₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-card__delete"></button>
+                                </li>
+
+                                <li class="cart__item cart-card">
+                                    <div class="cart-card__image">
+                                        <img src="/src/assets/images/product-card/trout.jpg" alt="">
+                                    </div>
+
+                                    <div class="cart-card__content">
+                                        <p class="cart-card__name">
+                                            Форель
+                                        </p>
+
+                                        <div class="cart-card__group">
+                                            <div class="cart-card__quantity">
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--minus"></button>
+
+                                                <p class="cart-card__quantity-value">
+                                                    1,5 кг
+                                                </p>
+
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--plus"></button>
+                                            </div>
+
+                                            <div class="cart-card__cost">
+                                                <p class="cart-card__old-price">
+                                                    2 500&nbsp;₽
+                                                </p>
+
+                                                <p class="cart-card__price">
+                                                    1 800&nbsp;₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-card__delete"></button>
+                                </li>
+
+                                <li class="cart__item cart-card">
+                                    <div class="cart-card__image">
+                                        <img src="/src/assets/images/product-card/trout.jpg" alt="">
+                                    </div>
+
+                                    <div class="cart-card__content">
+                                        <p class="cart-card__name">
+                                            Форель слабосоленая с&nbsp;добавлением пряностей
+                                        </p>
+
+                                        <div class="cart-card__group">
+                                            <div class="cart-card__quantity">
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--minus"></button>
+
+                                                <p class="cart-card__quantity-value">
+                                                    1,5 кг
+                                                </p>
+
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--plus"></button>
+                                            </div>
+
+                                            <div class="cart-card__cost">
+                                                <p class="cart-card__old-price">
+                                                    2 500&nbsp;₽
+                                                </p>
+
+                                                <p class="cart-card__price">
+                                                    1 800&nbsp;₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-card__delete"></button>
+                                </li>
+
+                                <li class="cart__item cart-card">
+                                    <div class="cart-card__image">
+                                        <img src="/src/assets/images/product-card/trout.jpg" alt="">
+                                    </div>
+
+                                    <div class="cart-card__content">
+                                        <p class="cart-card__name">
+                                            Форель слабосоленая с&nbsp;добавлением пряностей
+                                        </p>
+
+                                        <div class="cart-card__group">
+                                            <div class="cart-card__quantity">
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--minus"></button>
+
+                                                <p class="cart-card__quantity-value">
+                                                    1,5 кг
+                                                </p>
+
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--plus"></button>
+                                            </div>
+
+                                            <div class="cart-card__cost">
+                                                <p class="cart-card__old-price">
+                                                    2 500&nbsp;₽
+                                                </p>
+
+                                                <p class="cart-card__price">
+                                                    1 800&nbsp;₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-card__delete"></button>
+                                </li>
+
+                                <li class="cart__item cart-card">
+                                    <div class="cart-card__image">
+                                        <img src="/src/assets/images/product-card/trout.jpg" alt="">
+                                    </div>
+
+                                    <div class="cart-card__content">
+                                        <p class="cart-card__name">
+                                            Форель слабосоленая с&nbsp;добавлением пряностей
+                                        </p>
+
+                                        <div class="cart-card__group">
+                                            <div class="cart-card__quantity">
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--minus"></button>
+
+                                                <p class="cart-card__quantity-value">
+                                                    1,5 кг
+                                                </p>
+
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--plus"></button>
+                                            </div>
+
+                                            <div class="cart-card__cost">
+                                                <p class="cart-card__old-price">
+                                                    2 500&nbsp;₽
+                                                </p>
+
+                                                <p class="cart-card__price">
+                                                    1 800&nbsp;₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-card__delete"></button>
+                                </li>
+
+                                <li class="cart__item cart-card">
+                                    <div class="cart-card__image">
+                                        <img src="/src/assets/images/product-card/trout.jpg" alt="">
+                                    </div>
+
+                                    <div class="cart-card__content">
+                                        <p class="cart-card__name">
+                                            Форель слабосоленая с&nbsp;добавлением пряностей
+                                        </p>
+
+                                        <div class="cart-card__group">
+                                            <div class="cart-card__quantity">
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--minus"></button>
+
+                                                <p class="cart-card__quantity-value">
+                                                    1,5 кг
+                                                </p>
+
+                                                <button class="cart-card__quantity-button cart-card__quantity-button--plus"></button>
+                                            </div>
+
+                                            <div class="cart-card__cost">
+                                                <p class="cart-card__old-price">
+                                                    2 500&nbsp;₽
+                                                </p>
+
+                                                <p class="cart-card__price">
+                                                    1 800&nbsp;₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-card__delete"></button>
+                                </li>
+                            </ul>
+
+                            <div class="cart__footer">
+                                <button class="cart__back" data-close-modal="cart">
+                                    <svg>
+                                        <use href="/public/sprite.svg#icon-back"></use>
+                                    </svg>
+                                    <span>
+                                        Назад
+                                    </span>
+                                </button>
+
+                                <div class="cart__summary">
+                                    <p class="cart__summary-label">
+                                        Итого:
+                                    </p>
+
+                                    <p class="cart__summary-value">
+                                        999 999 ₽
+                                    </p>
+
+                                    <p class="cart__summary-label cart__summary-label--blue">
+                                        Со скидкой:
+                                    </p>
+
+                                    <p class="cart__summary-value cart__summary-value--blue">
+                                        111 111 ₽
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__sidebar">
+                            <h2 class="cart__title cart__title--light">
+                                Оплата и&nbsp;доставка
+                            </h2>
+
+                            <form class="order-form">
+                                <div class="order-form__inner order-form__inner--first">
+                                    <div class="order-form__group">
+                                        <h3 class="order-form__group-title">
+                                            Способ получения
+                                        </h3>
+
+                                        <label class="order-form__radio">
+                                            <input type="radio" name="receive_method" value="pickup" checked>
+                                            <span class="order-form__radio-emulate"></span>
+                                            Самовывоз
+                                        </label>
+
+                                        <label class="order-form__radio">
+                                            <input type="radio" name="receive_method" value="delivery">
+                                            <span class="order-form__radio-emulate"></span>
+                                            Доставка
+                                        </label>
+                                    </div>
+
+                                    <div class="order-form__group">
+                                        <h3 class="order-form__group-title">
+                                            Способ оплаты
+                                        </h3>
+
+                                        <label class="order-form__radio">
+                                            <input type="radio" name="payment_method" value="cash" checked>
+                                            <span class="order-form__radio-emulate"></span>
+                                            Наличные (при получении)
+                                        </label>
+
+                                        <label class="order-form__radio">
+                                            <input type="radio" name="payment_method" value="card">
+                                            <span class="order-form__radio-emulate"></span>
+                                            Картой
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="order-form__inner">
+                                    <div class="order-form__group">
+                                        <label class="order-form__group-title order-form__group-title--margin">
+                                            Мобильный телефон
+                                        </label>
+
+                                        <input class="order-form__field" type="tel" name="phone" placeholder="+7 (___) ___ - __ - __">
+                                    </div>
+
+                                    <div class="order-form__group">
+                                        <label class="order-form__group-title order-form__group-title--margin">
+                                            Электронная почта
+                                        </label>
+
+                                        <input class="order-form__field" type="email" name="email" placeholder="Введите почту">
+                                    </div>
+
+                                    <div class="order-form__group is-disabled">
+                                        <label class="order-form__group-title order-form__group-title--margin">
+                                            Адрес доставки
+                                        </label>
+
+                                        <input class="order-form__field" type="text" name="address" placeholder="Введите адрес">
+                                    </div>
+                                </div>
+
+                                <button class="button button--round button--yellow order-form__button" type="submit">
+                                    Связаться со&nbsp;мной
+
+                                    <svg>
+                                        <use href="/public/sprite.svg#button-outline"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
