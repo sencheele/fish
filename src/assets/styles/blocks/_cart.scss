@@ -170,7 +170,7 @@
 
   &__back {
     @include reset-button;
-    @include typography(400, 1, 20px, $color-gray);
+    @include typography(400, 1, 18px, $color-gray);
 
     display: flex;
     align-items: center;
@@ -182,7 +182,6 @@
       aspect-ratio: 17 / 13;
       width: 22px;
       stroke: $color-gray;
-      transform: translateY(1px);
       transition: stroke $trans-default;
     }
 
@@ -195,7 +194,7 @@
     }
 
     @include vp-1239 {
-      font-size: 18px;
+      font-size: 16px;
 
       svg {
         width: 20px;
