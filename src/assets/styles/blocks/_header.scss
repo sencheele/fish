@@ -1,6 +1,6 @@
-@use '../variables' as *;
-@use '../mixins' as *;
-@use '../media' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
 
 .header {
   position: relative;
@@ -43,8 +43,8 @@
     align-items: center;
     column-gap: 30px;
 
-    @include vp-1534 {
-      column-gap: 20px
+    @include vp-1600 {
+      column-gap: 20px;
     }
 
     @include vp-1239 {
@@ -131,7 +131,7 @@
 
     @include hover {
       svg {
-        stroke: $color-accent
+        stroke: $color-accent;
       }
     }
 
@@ -185,7 +185,7 @@
 
     @include hover {
       svg {
-        stroke: $color-accent
+        stroke: $color-accent;
       }
     }
   }

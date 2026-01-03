@@ -1,6 +1,6 @@
-@use '../variables' as *;
-@use '../mixins' as *;
-@use '../media' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
 
 .order-form {
   display: flex;
@@ -17,7 +17,7 @@
     background-color: rgba($color: $color-white-blue, $alpha: 0.5);
   }
 
-  @include vp-1534 {
+  @include vp-1600 {
     max-height: 463px;
     padding-right: 15px;
     overflow-y: auto;

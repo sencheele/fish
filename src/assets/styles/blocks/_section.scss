@@ -1,13 +1,13 @@
-@use '../variables' as *;
-@use '../mixins' as *;
-@use '../media' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
 
 .section {
   --padding-block: 90px;
 
   padding-block: var(--padding-block);
 
-  @include vp-1534 {
+  @include vp-1600 {
     --padding-block: 75px;
   }
 
@@ -28,7 +28,7 @@
 
     margin-bottom: 30px;
 
-    @include vp-1534 {
+    @include vp-1600 {
       font-size: 56px;
     }
 

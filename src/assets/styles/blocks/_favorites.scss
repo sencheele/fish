@@ -7,7 +7,7 @@
   border-radius: 20px;
   background-color: $color-blue;
 
-  @include vp-1534 {
+  @include vp-1600 {
     padding: 30px 15px 30px 30px;
   }
 
@@ -27,7 +27,7 @@
     margin-bottom: 25px;
     padding-right: 15px;
 
-    @include vp-1534 {
+    @include vp-1600 {
       margin-bottom: 20px;
     }
 

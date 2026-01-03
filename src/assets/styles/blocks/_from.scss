@@ -1,6 +1,6 @@
-@use '../variables' as *;
-@use '../mixins' as *;
-@use '../media' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
 
 .from {
   &__wrapper {
@@ -83,7 +83,7 @@
       object-fit: contain;
     }
 
-    @include vp-1534 {
+    @include vp-1600 {
       top: 0;
       width: 700px;
     }
@@ -101,7 +101,7 @@
   &__title {
     max-width: 650px;
 
-    @include vp-1534 {
+    @include vp-1600 {
       max-width: none;
     }
 
@@ -126,7 +126,7 @@
       max-width: 420px;
       margin-bottom: 40px;
 
-      @include vp-1534 {
+      @include vp-1600 {
         max-width: none;
         margin-bottom: 20px;
       }
@@ -144,7 +144,7 @@
     &--second {
       padding-right: 50px;
 
-      @include vp-1534 {
+      @include vp-1600 {
         margin-bottom: 60px;
         padding: 0;
       }
@@ -165,7 +165,7 @@
       height: 100%;
     }
 
-    @include vp-1534 {
+    @include vp-1600 {
       top: 100px;
       left: calc(100% - 40px);
       width: 150px;
@@ -195,7 +195,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 
-    @include vp-1534 {
+    @include vp-1600 {
       display: block;
     }
   }

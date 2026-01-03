@@ -1,6 +1,6 @@
-@use '../variables' as *;
-@use '../mixins' as *;
-@use '../media' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
 
 .feedback {
   &__wrapper {
@@ -10,7 +10,7 @@
     width: 500px;
 
     @include vp-1239 {
-      width: calc((100% - 20px) / 3 * 2)
+      width: calc((100% - 20px) / 3 * 2);
     }
 
     @include vp-847 {
@@ -66,7 +66,7 @@
     width: 1058px;
     transform: translateY(-50%);
 
-    @include vp-1534 {
+    @include vp-1600 {
       left: calc(100% - 50px);
       width: 900px;
     }

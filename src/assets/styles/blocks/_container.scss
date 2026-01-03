@@ -12,9 +12,13 @@
   margin: 0 auto;
   padding-inline: var(--padding-inline);
 
-  @include vp-1534 {
+  @include vp-1600 {
     --content-width: 1160px;
   }
+
+  // @include vp-1600 {
+  //   --content-width: 1160px;
+  // }
 
   @include vp-1239 {
     --content-width: 768px;

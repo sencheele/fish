@@ -1,13 +1,13 @@
-@use '../variables' as *;
-@use '../mixins' as *;
-@use '../media' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+@use "../media" as *;
 
 .cart {
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 400px;
 
-    @include vp-1534 {
+    @include vp-1600 {
       grid-template-columns: 1fr 340px;
     }
 
@@ -24,7 +24,7 @@
     border-radius: 20px 0 0 20px;
     background-color: $color-white-dark;
 
-    @include vp-1534 {
+    @include vp-1600 {
       padding: 30px 20px 30px 30px;
     }
 
@@ -46,7 +46,7 @@
       color: $color-text-main;
     }
 
-    @include vp-1534 {
+    @include vp-1600 {
       margin-bottom: 20px;
     }
 
@@ -80,7 +80,7 @@
       background-color: rgba($color: $color-white-blue, $alpha: 0.5);
     }
 
-    @include vp-1534 {
+    @include vp-1600 {
       max-height: 385px;
     }
 
@@ -216,7 +216,7 @@
     overflow-y: hidden;
     background-color: $color-blue;
 
-    @include vp-1534 {
+    @include vp-1600 {
       padding: 30px 15px 0 30px;
     }
 

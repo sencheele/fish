@@ -7,8 +7,8 @@
   }
 }
 
-@mixin vp-1534 {
-  @media (max-width: 1534px) {
+@mixin vp-1600 {
+  @media (max-width: 1600px) {
     @content;
   }
 }
@@ -42,4 +42,3 @@
     @content;
   }
 }
-
