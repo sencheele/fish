@@ -131,9 +131,12 @@
       background-color: rgba($color: $color-white-blue, $alpha: 0.5);
     }
 
+    @include vp-1600 {
+      max-height: 453px;
+    }
+
     @include vp-1239 {
       grid-template-columns: repeat(3, 1fr);
-      // gap: 15px;
       max-height: none;
       padding: 0;
       overflow-y: visible;
