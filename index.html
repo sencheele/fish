@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="header__actions">
-                        <button class="button header__action-button" type="button">
+                        <button class="button header__action-button" type="button" data-open-modal="favorites">
                             <svg>
                                 <use href="/public/sprite.svg#icon-heart"></use>
                             </svg>
@@ -2206,6 +2206,364 @@
                                 </button>
                             </form>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal--preload" data-modal="favorites">
+        <div class="modal__wrapper">
+            <div class="modal__overlay" data-close-modal></div>
+
+            <div class="modal__content">
+                <div class="favorites">
+                    <div class="favorites__wrapper">
+                        <div class="favorites__header">
+                            <h2 class="favorites__title">
+                                Понравившиеся товары
+                            </h2>
+
+                            <button class="favorites__close" data-close-modal="favorites"></button>
+                        </div>
+
+                        <ul class="favorites__list">
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <div class="product-card__badge">
+                                        Суперцена
+                                    </div>
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__old-price">
+                                            2500 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <div class="product-card__badge">
+                                        Суперцена
+                                    </div>
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__old-price">
+                                            2500 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="favorites__item product-card">
+                                <div class="product-card__image">
+                                    <img src="/src/assets/images/product-card/trout.jpg" alt="Форель">
+
+                                    <button class="button product-card__favorite">
+                                        <svg>
+                                            <use href="/public/sprite.svg#icon-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="product-card__info">
+                                    <h3 class="product-card__name">
+                                        Форель
+                                    </h3>
+
+                                    <div class="product-card__description">
+                                        <p>
+                                            У форели очень нежное и сочное филе, что в свою очередь позволяет надолго запомнить этот вкус
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <button class="button product-card__button">
+                                        Купить
+                                    </button>
+
+                                    <div class="product-card__details">
+                                        <p class="product-card__price">
+                                            1800 ₽ / кг
+                                        </p>
+
+                                        <p class="product-card__availability">
+                                            В&nbsp;наличии 22.5&nbsp;кг
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
