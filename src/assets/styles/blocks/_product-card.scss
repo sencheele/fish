@@ -17,37 +17,6 @@
     min-height: 365px;
   }
 
-  &:nth-child(34n + 6),
-  &:nth-child(34n + 14),
-  &:nth-child(34n + 19),
-  &:nth-child(34n + 27),
-  &:nth-child(34n + 35) {
-    grid-column: span 2;
-
-    @include vp-1239 {
-      grid-column: span 1;
-    }
-  }
-
-  &:nth-child(10n + 5),
-  &:nth-child(10n + 9),
-  &:nth-child(10n + 15),
-  &:nth-child(10n + 19) {
-    @include vp-1239 {
-      grid-column: span 2;
-    }
-
-    @include vp-847 {
-      grid-column: span 1;
-    }
-  }
-
-  &:nth-child(3n) {
-    @include vp-847 {
-      grid-column: span 2;
-    }
-  }
-
   &__image {
     position: relative;
     height: 200px;
@@ -179,7 +148,7 @@
     transition: background-color $trans-default, color $trans-default;
 
     @include vp-1239 {
-      padding: 10px 20px;
+      padding: 10px 15px;
       font-size: 18px;
     }
 
@@ -224,6 +193,10 @@
     @include typography(700, 1, 20px, $color-blue);
 
     margin-bottom: 2px;
+
+    @include vp-1239 {
+      font-size: 18px;
+    }
   }
 
   &__availability {
