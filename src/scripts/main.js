@@ -1,10 +1,12 @@
 import '/src/assets/styles/style.scss'
 
 import { initPhoneMask } from './init-phone-mask'
+import { initCatalog } from './init-catalog'
 
 document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', async () => {
     initPhoneMask()
+    initCatalog()
 
     // Динамический импорт компонентов и библиотек
 
