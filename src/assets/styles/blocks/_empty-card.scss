@@ -13,6 +13,10 @@
   border-radius: 20px;
   background-color: rgba($color: $color-white-blue-dark, $alpha: 0.5);
 
+  &.is-hidden {
+    display: none;
+  }
+
   @include vp-1239 {
     min-height: 350px;
   }
