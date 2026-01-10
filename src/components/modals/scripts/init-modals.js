@@ -1,4 +1,5 @@
 import {Modals} from './modals';
+import { renderProductsFromStorage } from '../../../scripts/render-products-from-storage';
 
 let modals;
 
@@ -13,6 +14,12 @@ const settings = {
     eventTimeout: 400,
     openCallback: false,
     closeCallback: false,
+  },
+  'favorites': {
+    openCallback: () => renderProductsFromStorage('data-favorite-list', 'favoriteList'),
+  },
+  'cart': {
+    openCallback: () => renderProductsFromStorage('data-cart-list', 'cartList', 'cart'),
   },
   // modal-1, modal-6 добавлен исключительно для примера при добавлении на проект ключ и обект записанный в нём нужно удалить
   // 'modal-1': {
