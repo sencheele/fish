@@ -26,6 +26,7 @@ export const createProductCard = (product) => {
   const favorite = createElement('button', ['button', 'product-card__favorite'])
   favorite.type = 'button'
   favorite.innerHTML = '<svg><use href="/public/sprite.svg#icon-favorite"></use></svg>'
+  favorite.dataset.addFavorite = product.id
   productCardImage.append(favorite)
 
   // Блок с названием товара и его описанием
@@ -47,9 +48,9 @@ export const createProductCard = (product) => {
   const bottom = createElement('div', ['product-card__bottom'])
 
   const buttonCart = createElement('button', ['button', 'product-card__button'])
-  buttonCart.dataset.id = product.id
   buttonCart.type = 'button'
   buttonCart.textContent = 'Купить'
+  buttonCart.dataset.addCart = product.id
 
   const details = createElement('div', ['product-card__details'])
 
