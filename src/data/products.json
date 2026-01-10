@@ -124,7 +124,7 @@
     "imageURL": "/src/assets/images/product-card/halibut.jpg"
   },
   {
-    "id": 6,
+    "id": 11,
     "name": "Лосось",
     "description": "Лосось обладает плотным, маслянистым филе с насыщенным вкусом. Богат омега-3 жирными кислотами и ценится за высокую питательную ценность.",
     "price": 2600,
@@ -136,7 +136,7 @@
     "imageURL": "/src/assets/images/product-card/salmon.jpg"
   },
   {
-    "id": 7,
+    "id": 12,
     "name": "Тунец",
     "description": "Мясо тунца плотное и нежное, с ярко выраженным вкусом. Отлично подходит для стейков и блюд высокой кухни.",
     "price": 2400,
@@ -149,7 +149,7 @@
     "imageURL": "/src/assets/images/product-card/tuna.jpg"
   },
   {
-    "id": 8,
+    "id": 13,
     "name": "Сибас",
     "description": "Сибас отличается белым сочным мясом и мягким вкусом. Идеален для запекания и приготовления на гриле.",
     "price": 2100,
@@ -162,7 +162,7 @@
     "imageURL": "/src/assets/images/product-card/seabass.jpg"
   },
   {
-    "id": 9,
+    "id": 14,
     "name": "Дорадо",
     "description": "Дорадо имеет нежное филе с тонким морским ароматом. Часто используется в средиземноморской кухне.",
     "price": 2050,
@@ -174,7 +174,7 @@
     "imageURL": "/src/assets/images/product-card/dorado.jpg"
   },
   {
-    "id": 10,
+    "id": 15,
     "name": "Палтус",
     "description": "Филе палтуса плотное, сочное и практически без костей. Отличается мягким, сбалансированным вкусом.",
     "price": 2700,
@@ -186,7 +186,7 @@
     "imageURL": "/src/assets/images/product-card/halibut.jpg"
   },
   {
-    "id": 6,
+    "id": 16,
     "name": "Лосось",
     "description": "Лосось обладает плотным, маслянистым филе с насыщенным вкусом. Богат омега-3 жирными кислотами и ценится за высокую питательную ценность.",
     "price": 2600,
@@ -198,7 +198,7 @@
     "imageURL": "/src/assets/images/product-card/salmon.jpg"
   },
   {
-    "id": 7,
+    "id": 17,
     "name": "Тунец",
     "description": "Мясо тунца плотное и нежное, с ярко выраженным вкусом. Отлично подходит для стейков и блюд высокой кухни.",
     "price": 2400,
@@ -211,7 +211,7 @@
     "imageURL": "/src/assets/images/product-card/tuna.jpg"
   },
   {
-    "id": 8,
+    "id": 18,
     "name": "Сибас",
     "description": "Сибас отличается белым сочным мясом и мягким вкусом. Идеален для запекания и приготовления на гриле.",
     "price": 2100,
@@ -224,7 +224,7 @@
     "imageURL": "/src/assets/images/product-card/seabass.jpg"
   },
   {
-    "id": 9,
+    "id": 19,
     "name": "Дорадо",
     "description": "Дорадо имеет нежное филе с тонким морским ароматом. Часто используется в средиземноморской кухне.",
     "price": 2050,
@@ -236,193 +236,7 @@
     "imageURL": "/src/assets/images/product-card/dorado.jpg"
   },
   {
-    "id": 10,
-    "name": "Палтус",
-    "description": "Филе палтуса плотное, сочное и практически без костей. Отличается мягким, сбалансированным вкусом.",
-    "price": 2700,
-    "availability": 12,
-    "calories": 140,
-    "proteins": 26,
-    "fats": 3,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/halibut.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Лосось",
-    "description": "Лосось обладает плотным, маслянистым филе с насыщенным вкусом. Богат омега-3 жирными кислотами и ценится за высокую питательную ценность.",
-    "price": 2600,
-    "availability": 18,
-    "calories": 208,
-    "proteins": 20,
-    "fats": 13,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/salmon.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Тунец",
-    "description": "Мясо тунца плотное и нежное, с ярко выраженным вкусом. Отлично подходит для стейков и блюд высокой кухни.",
-    "price": 2400,
-    "oldPrice": 2900,
-    "availability": 15,
-    "calories": 132,
-    "proteins": 29,
-    "fats": 1,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/tuna.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Сибас",
-    "description": "Сибас отличается белым сочным мясом и мягким вкусом. Идеален для запекания и приготовления на гриле.",
-    "price": 2100,
-    "oldPrice": 2600,
-    "availability": 20,
-    "calories": 124,
-    "proteins": 20,
-    "fats": 4,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/seabass.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Дорадо",
-    "description": "Дорадо имеет нежное филе с тонким морским ароматом. Часто используется в средиземноморской кухне.",
-    "price": 2050,
-    "availability": 19,
-    "calories": 123,
-    "proteins": 21,
-    "fats": 4,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/dorado.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Палтус",
-    "description": "Филе палтуса плотное, сочное и практически без костей. Отличается мягким, сбалансированным вкусом.",
-    "price": 2700,
-    "availability": 12,
-    "calories": 140,
-    "proteins": 26,
-    "fats": 3,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/halibut.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Лосось",
-    "description": "Лосось обладает плотным, маслянистым филе с насыщенным вкусом. Богат омега-3 жирными кислотами и ценится за высокую питательную ценность.",
-    "price": 2600,
-    "availability": 18,
-    "calories": 208,
-    "proteins": 20,
-    "fats": 13,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/salmon.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Тунец",
-    "description": "Мясо тунца плотное и нежное, с ярко выраженным вкусом. Отлично подходит для стейков и блюд высокой кухни.",
-    "price": 2400,
-    "oldPrice": 2900,
-    "availability": 15,
-    "calories": 132,
-    "proteins": 29,
-    "fats": 1,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/tuna.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Сибас",
-    "description": "Сибас отличается белым сочным мясом и мягким вкусом. Идеален для запекания и приготовления на гриле.",
-    "price": 2100,
-    "oldPrice": 2600,
-    "availability": 20,
-    "calories": 124,
-    "proteins": 20,
-    "fats": 4,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/seabass.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Дорадо",
-    "description": "Дорадо имеет нежное филе с тонким морским ароматом. Часто используется в средиземноморской кухне.",
-    "price": 2050,
-    "availability": 19,
-    "calories": 123,
-    "proteins": 21,
-    "fats": 4,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/dorado.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Палтус",
-    "description": "Филе палтуса плотное, сочное и практически без костей. Отличается мягким, сбалансированным вкусом.",
-    "price": 2700,
-    "availability": 12,
-    "calories": 140,
-    "proteins": 26,
-    "fats": 3,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/halibut.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Лосось",
-    "description": "Лосось обладает плотным, маслянистым филе с насыщенным вкусом. Богат омега-3 жирными кислотами и ценится за высокую питательную ценность.",
-    "price": 2600,
-    "availability": 18,
-    "calories": 208,
-    "proteins": 20,
-    "fats": 13,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/salmon.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Тунец",
-    "description": "Мясо тунца плотное и нежное, с ярко выраженным вкусом. Отлично подходит для стейков и блюд высокой кухни.",
-    "price": 2400,
-    "oldPrice": 2900,
-    "availability": 15,
-    "calories": 132,
-    "proteins": 29,
-    "fats": 1,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/tuna.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Сибас",
-    "description": "Сибас отличается белым сочным мясом и мягким вкусом. Идеален для запекания и приготовления на гриле.",
-    "price": 2100,
-    "oldPrice": 2600,
-    "availability": 20,
-    "calories": 124,
-    "proteins": 20,
-    "fats": 4,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/seabass.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Дорадо",
-    "description": "Дорадо имеет нежное филе с тонким морским ароматом. Часто используется в средиземноморской кухне.",
-    "price": 2050,
-    "availability": 19,
-    "calories": 123,
-    "proteins": 21,
-    "fats": 4,
-    "carbs": 0,
-    "imageURL": "/src/assets/images/product-card/dorado.jpg"
-  },
-  {
-    "id": 10,
+    "id": 20,
     "name": "Палтус",
     "description": "Филе палтуса плотное, сочное и практически без костей. Отличается мягким, сбалансированным вкусом.",
     "price": 2700,
