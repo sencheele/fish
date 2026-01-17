@@ -2,14 +2,13 @@ import '/src/assets/styles/style.scss'
 
 import { initPhoneMask } from './init-phone-mask'
 import { initCatalog } from './init-catalog'
-import { initStorageToggle } from './init-storage-toggle'
+import { initToggles } from './init-toggles'
 
 document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', async () => {
     initPhoneMask()
     initCatalog()
-    initStorageToggle('data-add-favorite', 'addFavorite', 'favoriteList')
-    initStorageToggle('data-add-cart', 'addCart', 'cartList')
+    initToggles()
 
     // Динамический импорт компонентов и библиотек
 
