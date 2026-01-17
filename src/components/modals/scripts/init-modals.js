@@ -3,6 +3,9 @@ import { renderProductsFromStorage } from '../../../scripts/render-products-from
 
 let modals;
 
+const favoriteListContainer = document.querySelector('[data-favorite-list]')
+const cartListContainer = document.querySelector('[data-cart-list]')
+
 const settings = {
   'default': {
     preventDefault: true,
@@ -16,10 +19,10 @@ const settings = {
     closeCallback: false,
   },
   'favorites': {
-    openCallback: () => renderProductsFromStorage('data-favorite-list', 'favoriteList'),
+    openCallback: () => renderProductsFromStorage(favoriteListContainer, 'favoriteList'),
   },
   'cart': {
-    openCallback: () => renderProductsFromStorage('data-cart-list', 'cartList', 'cart'),
+    openCallback: () => renderProductsFromStorage(cartListContainer, 'cartList', 'cart'),
   },
   // modal-1, modal-6 добавлен исключительно для примера при добавлении на проект ключ и обект записанный в нём нужно удалить
   // 'modal-1': {
