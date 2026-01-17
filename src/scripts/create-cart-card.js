@@ -49,6 +49,8 @@ export const createCartCard = (product) => {
 
   const deleteCart = createElement('button', ['cart-card__delete'])
   deleteCart.type = 'button'
+  deleteCart.dataset.remove = ''
+  deleteCart.dataset.id = product.id
 
   const content = createElement('div', ['cart-card__content'])
   content.append(name, group)
