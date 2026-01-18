@@ -1,4 +1,5 @@
 import { syncAllToggles } from "./sync-all-toggles"
+import { updateCount } from "./updateCount"
 
 export const initStorageToggle = (containerEl, buttonSelector, storageKey, onChange) => {
   containerEl.addEventListener('click', (e) => {
@@ -23,5 +24,6 @@ export const initStorageToggle = (containerEl, buttonSelector, storageKey, onCha
     }
 
     syncAllToggles()
+    updateCount()
   })
 }
