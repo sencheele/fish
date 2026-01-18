@@ -1,5 +1,6 @@
 import { loadJSON } from './load-json'
 import { initShowMore } from './init-show-more'
+import { syncAllToggles } from './sync-all-toggles'
 
 export const initCatalog = async () => {
   const catalogContainer = document.querySelector('[data-catalog-list]')
@@ -10,6 +11,8 @@ export const initCatalog = async () => {
   try {
     const productsList = await loadJSON('/src/data/products.json')
     initShowMore(productsList, catalogContainer, showMore)
+    console.log(catalogContainer.innerHTML)
+    syncAllToggles()
   } catch (error) {
     console.error(error)
   }

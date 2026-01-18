@@ -1,3 +1,5 @@
+import { syncAllToggles } from "./sync-all-toggles"
+
 export const initStorageToggle = (containerEl, buttonSelector, storageKey, onChange) => {
   containerEl.addEventListener('click', (e) => {
     const button = e.target.closest(buttonSelector)
@@ -14,11 +16,12 @@ export const initStorageToggle = (containerEl, buttonSelector, storageKey, onCha
       productItems = productItems.filter(item => item !== id)
     }
 
-    // button.classList.toggle('is-active', isActive)
     localStorage.setItem(storageKey, JSON.stringify(productItems))
 
     if (onChange) {
       onChange()
     }
+
+    syncAllToggles()
   })
 }
